@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld :msg="`Hello Vue 3.0 + Vite?`" />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+  <HelloWorld dataTable="datalist" msg="vite " v2="grandPa" />
 </template>
 
 <script>
@@ -11,5 +11,11 @@ export default {
   components: {
     HelloWorld,
   },
+  data() {
+    return {
+      datalist: 'xxx',
+    };
+  },
+  inheritAttrs: false,
 };
 </script>
